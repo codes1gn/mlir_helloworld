@@ -1,1 +1,1 @@
-add_subdirectory(air)
+add_subdirectory(Air)
