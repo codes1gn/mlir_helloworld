@@ -5,4 +5,5 @@
 add_mlir_dialect(AirOps air)
 
 # TIP 2 use add_mlir_doc to generate documentations
-add_mlir_doc(AirOps AirDialect . -gen-dialect-doc)
+add_mlir_doc(AirOps AirOps Dialect/Air/ -gen-dialect-doc)
+# add_mlir_doc(AirDialect AirDialect Dialect/Air/ -gen-dialect-doc)

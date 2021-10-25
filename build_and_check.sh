@@ -19,6 +19,7 @@ cmake -G Ninja \
 # build mlir and install
 cmake --build . --target install
 cmake --build . --target check-mlir
+cmake --build . --target mlir-tblgen
 
 # switch back to the top level dir
 cd -
@@ -35,6 +36,6 @@ cmake -G Ninja .. \
     -DLLVM_USE_LINKER=lld
 
 # build helloworld
-# cmake --build . --target helloworld
+cmake --build . --target mlir-headers
 
 cd -
