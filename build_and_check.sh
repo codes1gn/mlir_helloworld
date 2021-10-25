@@ -35,6 +35,6 @@ cmake -G Ninja .. \
     -DLLVM_USE_LINKER=lld
 
 # build helloworld
-cmake --build . --target helloworld
+# cmake --build . --target helloworld
 
 cd -

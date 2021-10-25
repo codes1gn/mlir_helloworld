@@ -61,10 +61,4 @@ find_package(Python3 COMPONENTS Interpreter Development REQUIRED)
 message(STATUS "Found python include dirs: ${Python_INCLUDE_DIRS}")
 message(STATUS "Found python libraries: ${Python_LIBRARIES}")
 
-# build subcomponents
-# add_subdirectory(test)
-# add_subdirectory(cancer-compiler-src)
-
-# add executable_tools
-# add_subdirectory(cancer-compiler)
-
+add_subdirectory(src)
