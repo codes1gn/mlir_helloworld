@@ -36,6 +36,6 @@ cmake -G Ninja .. \
     -DLLVM_USE_LINKER=lld
 
 # build helloworld
-cmake --build . --target mlir-headers
+cmake --build . --target helloworld
 
 cd -

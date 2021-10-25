@@ -48,8 +48,10 @@ set(CANCER_TABLEGEN_ARGS "")
 # include project-required headers
 include_directories(${LLVM_INCLUDE_DIRS})
 include_directories(${MLIR_INCLUDE_DIRS})
-# include_directories(${PROJECT_SOURCE_DIR}/cancer-compiler-src/include)
-# include_directories(${PROJECT_BINARY_DIR}/cancer-compiler-src/include)
+
+# TODO this line includes the header files from ./src/include/
+include_directories(${PROJECT_SOURCE_DIR}/src/include)
+include_directories(${PROJECT_BINARY_DIR}/src/include)
 
 link_directories(${LLVM_BUILD_LIBRARY_DIR})
 add_definitions(${LLVM_DEFINITIONS})
@@ -62,3 +64,9 @@ message(STATUS "Found python include dirs: ${Python_INCLUDE_DIRS}")
 message(STATUS "Found python libraries: ${Python_LIBRARIES}")
 
 add_subdirectory(src)
+
+add_custom_target(helloworld)
+add_dependencies(helloworld
+    mlir-headers
+    )
+
