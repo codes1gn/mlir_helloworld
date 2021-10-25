@@ -3,6 +3,6 @@
 
 #include "mlir/IR/Dialect.h"
 
-#include "Dialect/Air/IR/AirDialect.h.inc"
+#include "Dialect/Air/IR/AirOpsDialect.h.inc"
 
 #endif // HELLOWORLD_DIALECT_AIR_IR_AIR_DIALECT_H

@@ -68,5 +68,6 @@ add_subdirectory(src)
 add_custom_target(helloworld)
 add_dependencies(helloworld
     mlir-headers
+    HELLOWORLDAirDialect
     )
 
